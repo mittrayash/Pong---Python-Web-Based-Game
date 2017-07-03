@@ -10,11 +10,14 @@ WIDTH = 600
 HEIGHT = 400     
 BALL_RADIUS = 20
 PAD_WIDTH = 8
-PAD_HEIGHT = 80
+PAD_HEIGHT = 75
 HALF_PAD_WIDTH = PAD_WIDTH / 2
 HALF_PAD_HEIGHT = PAD_HEIGHT / 2
 
-
+if LEFT == True:
+    direction = LEFT
+else:
+    direction = RIGHT
 score1 = score2 = 0
 
 
