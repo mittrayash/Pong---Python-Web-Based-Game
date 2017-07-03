@@ -13,3 +13,16 @@ PAD_WIDTH = 8
 PAD_HEIGHT = 80
 HALF_PAD_WIDTH = PAD_WIDTH / 2
 HALF_PAD_HEIGHT = PAD_HEIGHT / 2
+
+
+score1 = score2 = 0
+
+
+
+
+
+
+
+
+
+
