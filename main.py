@@ -26,6 +26,7 @@ score1 = score2 = 0
 
 
 
-
+# create frame
+frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
 
 
