@@ -13,7 +13,9 @@ PAD_WIDTH = 8
 PAD_HEIGHT = 80
 HALF_PAD_WIDTH = PAD_WIDTH / 2
 HALF_PAD_HEIGHT = PAD_HEIGHT / 2
-
+LEFT = random.choice([True, False])
+RIGHT = not LEFT
+paddle1_vel = paddle2_vel = 0
 if LEFT == True:
     direction = LEFT
 else:
