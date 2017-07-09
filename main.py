@@ -25,6 +25,8 @@ score1 = score2 = 0
 ball_pos = [WIDTH/2, HEIGHT/2]
 ball_vel = [1, 2]
 
+paddle1_posd = [HALF_PAD_WIDTH, HEIGHT/2 - HALF_PAD_HEIGHT]
+paddle1_posu = [HALF_PAD_WIDTH, HEIGHT/2 + HALF_PAD_HEIGHT]
 
 
 
