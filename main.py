@@ -22,7 +22,8 @@ else:
     direction = RIGHT
 score1 = score2 = 0
 
-
+ball_pos = [WIDTH/2, HEIGHT/2]
+ball_vel = [1, 2]
 
 
 
