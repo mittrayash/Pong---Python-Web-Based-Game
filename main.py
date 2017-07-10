@@ -31,6 +31,9 @@ paddle2_posd = [WIDTH - HALF_PAD_WIDTH, HEIGHT/2 - HALF_PAD_HEIGHT]
 paddle2_posu = [WIDTH - HALF_PAD_WIDTH, HEIGHT/2 + HALF_PAD_HEIGHT]
 
 
+# if direction is RIGHT, the ball's velocity is upper right, else upper lef
+def vel(dir):
+	pass
 
 # create frame
 frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
