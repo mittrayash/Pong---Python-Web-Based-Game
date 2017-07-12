@@ -37,7 +37,7 @@ def vel(dir):
         ball_vel[0] = random.randrange(2, 10)
     elif dir == LEFT:
         ball_vel[0] = -random.randrange(2, 10)
-
+ball_vel[1] = -random.randrange(3, 7)
 
 # create frame
 frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
