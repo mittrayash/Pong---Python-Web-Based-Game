@@ -39,6 +39,14 @@ def vel(dir):
         ball_vel[0] = -random.randrange(2, 10)
 ball_vel[1] = -random.randrange(3, 7)
 
+
+def spawn_ball(directio):
+    global ball_pos, ball_vel, direction# these are vectors stored as lists
+    directio = random.choice([LEFT, RIGHT])
+    vel(directio)
+
+
+
 # create frame
 frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
 
