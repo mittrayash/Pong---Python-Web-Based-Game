@@ -51,7 +51,9 @@ def new_game():
     global paddle1_pos, paddle2_pos, paddle1_vel, paddle2_vel, ball_pos # these are numbers  
     global score1, score2 # these are ints
     score1 = score2 = 0
-    
+	directio = random.choice([LEFT, RIGHT])
+
+# define event handlers
 
 # create frame
 frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
