@@ -34,9 +34,9 @@ paddle2_posu = [WIDTH - HALF_PAD_WIDTH, HEIGHT/2 + HALF_PAD_HEIGHT]
 # if direction is RIGHT, the ball's velocity is upper right, else upper lef
 def vel(dir):
 	if dir == RIGHT:
-        ball_vel[0] = random.randrange(2, 10)
+        ball_vel[0] = random.randrange(2, 6)
     elif dir == LEFT:
-        ball_vel[0] = -random.randrange(2, 10)
+        ball_vel[0] = -random.randrange(2, 6)
 ball_vel[1] = -random.randrange(3, 7)
 
 
