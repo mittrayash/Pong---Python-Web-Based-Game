@@ -54,6 +54,10 @@ def new_game():
 	directio = random.choice([LEFT, RIGHT])
 	ball_pos = [WIDTH/2, HEIGHT/2]
     spawn_ball(directio)
+	
+def restart1():
+    new_game()	
+
 # define event handlers
 
 # create frame
