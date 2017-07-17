@@ -58,6 +58,12 @@ def new_game():
 def restart1():
     new_game()	
 
+	
+def draw(canvas):
+    global score1, score2, paddle1_pos, paddle2_pos, ball_pos, ball_vel, paddle1_vel, paddle2_vel
+	
+	
+	
 # define event handlers
 
 # create frame
