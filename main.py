@@ -67,6 +67,9 @@ def draw(canvas):
     canvas.draw_line([PAD_WIDTH, 0],[PAD_WIDTH, HEIGHT], 1, "White")
     canvas.draw_line([WIDTH - PAD_WIDTH, 0],[WIDTH - PAD_WIDTH, HEIGHT], 1, "White")
 	
+	# draw ball
+    canvas.draw_circle(ball_pos, BALL_RADIUS, 1, 'RED', 'WHITE')
+	
 # define event handlers
 
 # create frame
