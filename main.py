@@ -70,6 +70,11 @@ def draw(canvas):
 	# draw ball
     canvas.draw_circle(ball_pos, BALL_RADIUS, 1, 'RED', 'WHITE')
 	
+	# draw paddles
+    canvas.draw_line(paddle1_posd,paddle1_posu, PAD_WIDTH, 'WHITE')
+    canvas.draw_line(paddle2_posd,paddle2_posu, PAD_WIDTH, 'WHITE')
+	
+	
 # define event handlers
 
 # create frame
