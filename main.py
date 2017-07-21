@@ -83,6 +83,12 @@ def draw(canvas):
         ball_vel[0] = -1.1 * ball_vel[0]
         ball_vel[1] = 1.1 * ball_vel[1]
         flag = 0
+		
+	# draw scores
+    
+    canvas.draw_text(str(score1), [WIDTH/4, 40], 30, 'YELLOW')
+    
+    canvas.draw_text(str(score2), [3*WIDTH/4, 40], 30, 'YELLOW')
 	
 # define event handlers
 
