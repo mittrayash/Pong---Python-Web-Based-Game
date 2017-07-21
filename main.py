@@ -74,6 +74,12 @@ def draw(canvas):
     canvas.draw_line(paddle1_posd,paddle1_posu, PAD_WIDTH, 'WHITE')
     canvas.draw_line(paddle2_posd,paddle2_posu, PAD_WIDTH, 'WHITE')
 	
+	# determine whether paddle and ball collide    
+    if ball_pos[0] - BALL_RADIUS <= PAD_WIDTH and paddle1_posd[1] <= ball_pos[1] and paddle1_posu[1] >= ball_pos[1]:
+        ball_vel[0] = -1.1 * ball_vel[0]
+        ball_vel[1] = 1.1 * ball_vel[1]
+        flag = 0
+	
 	
 # define event handlers
 
