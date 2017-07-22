@@ -84,6 +84,11 @@ def draw(canvas):
         ball_vel[1] = 1.1 * ball_vel[1]
         flag = 0
 		
+	if ball_pos[1] <= BALL_RADIUS:
+        ball_vel[1] = -ball_vel[1]
+    elif ball_pos[1] >= HEIGHT - BALL_RADIUS:
+        ball_vel[1] = -ball_vel[1]
+    
 	# draw scores
     
     canvas.draw_text(str(score1), [WIDTH/4, 40], 30, 'YELLOW')
