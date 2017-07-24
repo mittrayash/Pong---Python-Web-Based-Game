@@ -89,6 +89,17 @@ def draw(canvas):
     elif ball_pos[1] >= HEIGHT - BALL_RADIUS:
         ball_vel[1] = -ball_vel[1]
     
+	 if (ball_pos[0] >= WIDTH - PAD_WIDTH - BALL_RADIUS):
+        if flag == 1:
+            ball_pos = [WIDTH/2, HEIGHT/2]
+            spawn_ball(direction)
+            score1 += 1
+    if (ball_pos[0] <= PAD_WIDTH + BALL_RADIUS):
+        if flag == 1:
+            ball_pos = [WIDTH/2, HEIGHT/2]
+            spawn_ball(direction)
+            score2 += 1
+    
 	# draw scores
     
     canvas.draw_text(str(score1), [WIDTH/4, 40], 30, 'YELLOW')
