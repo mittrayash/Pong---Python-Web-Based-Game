@@ -106,6 +106,16 @@ def draw(canvas):
     
     canvas.draw_text(str(score2), [3*WIDTH/4, 40], 30, 'YELLOW')
 	
+	
+	ball_pos[0] += ball_vel[0]
+    ball_pos[1] += ball_vel[1]
+	
+	# update paddle's vertical position, keep paddle on the screen
+    if paddle1_posd[1] > 0 and paddle1_posu[1] < HEIGHT or  paddle1_posd[1] == 0 and paddle1_vel <0 or paddle1_posu[1] == HEIGHT and paddle1_vel > 0:
+        paddle1_posd[1] -= paddle1_vel
+        paddle1_posu[1] -= paddle1_vel
+		
+		
 # define event handlers
 
 # create frame
