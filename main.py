@@ -114,7 +114,10 @@ def draw(canvas):
     if paddle1_posd[1] > 0 and paddle1_posu[1] < HEIGHT or  paddle1_posd[1] == 0 and paddle1_vel <0 or paddle1_posu[1] == HEIGHT and paddle1_vel > 0:
         paddle1_posd[1] -= paddle1_vel
         paddle1_posu[1] -= paddle1_vel
-		
+	if paddle2_posd[1] > 0 and paddle2_posu[1] < HEIGHT or  paddle2_posd[1] == 0 and paddle2_vel <0 or paddle2_posu[1] == HEIGHT and paddle2_vel > 0:
+        paddle2_posd[1] -= paddle2_vel
+        paddle2_posu[1] -= paddle2_vel
+        
 		
 # define event handlers
 
