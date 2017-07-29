@@ -121,6 +121,10 @@ def draw(canvas):
 		
 # define event handlers
 
+def keydown(key):
+    global paddle1_vel, paddle2_vel
+    
+
 # create frame
 frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
 
