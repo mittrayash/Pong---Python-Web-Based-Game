@@ -133,6 +133,7 @@ def keydown(key):
         paddle2_vel = -5
 # create frame
 frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
+frame.set_draw_handler(draw)
 
 # start frame
 new_game()
