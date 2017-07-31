@@ -131,6 +131,18 @@ def keydown(key):
         paddle2_vel = 5
     elif key == simplegui.KEY_MAP['down']:
         paddle2_vel = -5
+
+def keyup(key):
+    global paddle1_vel, paddle2_vel
+    if key == simplegui.KEY_MAP['w']:
+        paddle1_vel = 0
+    elif key == simplegui.KEY_MAP['s']:
+        paddle1_vel = 0
+    elif key == simplegui.KEY_MAP['up']:
+        paddle2_vel = 0
+    elif key == simplegui.KEY_MAP['down']:
+        paddle2_vel = 0
+
 # create frame
 frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
 frame.set_draw_handler(draw)
