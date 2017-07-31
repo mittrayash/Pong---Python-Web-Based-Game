@@ -146,7 +146,9 @@ def keyup(key):
 # create frame
 frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
 frame.set_draw_handler(draw)
-
+frame.set_keydown_handler(keydown)
+frame.set_keyup_handler(keyup)
+frame.add_button('Restart', restart1, 100)
 # start frame
 new_game()
 frame.start()
