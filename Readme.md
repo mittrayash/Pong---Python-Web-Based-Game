@@ -8,6 +8,10 @@ Some features may work in other browsers, but do not expect full functionality. 
 ## Update:  
 Find it live on : http://www.codeskulptor.org/#user42_9WqaZOFlMZfuCEr.py
 
+To start the game, click on the play button!
+
+!['Could not load image'](/Screenshots/play.png) 
+
 --------------------------------------------------------------
 
 ## Screenshots:  
